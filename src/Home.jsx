@@ -16,7 +16,7 @@ import {
   faServer,
   faCodeBranch,
 } from "@fortawesome/free-solid-svg-icons";
-import "./Home.css";
+import "./home.css";
 
 const Home = () => {
   return (
