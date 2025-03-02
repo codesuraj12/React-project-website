@@ -3,7 +3,7 @@ import "./services.css";
 import serviceImage from "./assets/service.png";
 import client1 from "./assets/testP1.jpeg";
 import client2 from "./assets/testP2.jpeg";
-import client3 from "./assets/testP3.jpg";
+import client3 from "./assets/testp3.jpg";
 import client4 from "./assets/testp4.jpg";
 
 const servicesData = [
