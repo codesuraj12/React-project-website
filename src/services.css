@@ -1,0 +1,197 @@
+/* Container */
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.services-header h1 {
+  font-size: 2.5rem;
+  color: #5cf8cc;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  color: #f6f6f6;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Image Animation */
+.services-image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.service-image {
+  width: 300px;
+  animation: floatImage 3s infinite ease-in-out;
+}
+
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Service Card */
+.service-category {
+  background: #f0fdf4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  height: auto;
+}
+
+/* Heading Always Visible */
+.service-category h2 {
+  color: #047857;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Hover Hint */
+.service-category::after {
+  content: "Hover to see details";
+  color: #047857;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Service List Hidden by Default */
+.service-category ul {
+  list-style-type: none;
+  padding: 0;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* Hover Effects */
+.service-category:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  height: auto;
+  min-height: 250px;
+}
+
+.service-category:hover::after {
+  opacity: 0;
+}
+
+.service-category:hover ul {
+  opacity: 1;
+  max-height: 500px;
+  visibility: visible;
+}
+
+.service-category li {
+  padding: 5px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Client Reviews */
+.client-reviews {
+  margin-top: 50px;
+}
+
+.client-reviews h2 {
+  color: #065f46;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Reviews Grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Square Review Cards */
+.review {
+  background: #d1fae5;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 250px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Review Hover Effect */
+.review:hover {
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Review Image */
+.review-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Review Text */
+.review p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.review span {
+  display: block;
+  margin-top: 10px;
+  color: #047857;
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .service-category, .review {
+    transform: none !important;
+    min-height: auto;
+  }
+}

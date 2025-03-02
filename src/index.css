@@ -1,0 +1,69 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* home.css */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: black;
+    color: green;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: green;
+  }
+  
+  h1 span {
+    color: yellow;
+  }
+  
+  #dh {
+    color: green;
+  }
+  
+  h2 {
+    color: yellow;
+    font-size: 2rem;
+  }
+  
+  .line {
+    height: 4px;
+    width: 80%;
+    background: yellow;
+    margin: 20px auto;
+  }
+  
+  .contain {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: green;
+  }
+  
+  p span {
+    color: yellow;
+  }
+  
+  h3 {
+    color: green;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  

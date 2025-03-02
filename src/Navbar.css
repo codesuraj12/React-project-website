@@ -1,0 +1,124 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: rgba(46, 46, 46, 0.7); /* Transparent black */
+  color: yellow;
+  position: relative;
+  position: fixed;  /* Fix navbar position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: black; */
+  z-index: 1000; 
+}
+
+/* Main Navigation */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: black;
+}
+
+/* LOGO FIX - Responsive */
+.navbar-logo a {
+  font-size: 40px; /* Adjusted for desktop */
+  font-weight: bold;
+  text-decoration: none;
+  color: yellow;
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+}
+
+.thread {
+  font-style: italic;
+  font-size: 45px; /* Adjusted */
+  font-weight: bold;
+  color: green;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: yellow;
+  transition: color 0.3s;
+}
+
+.navbar-links .active {
+  color: green;
+}
+
+.navbar-links li a:hover {
+  color: white;
+}
+
+/* Mobile Navigation */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: yellow;
+  cursor: pointer;
+}
+
+/* RESPONSIVE FIXES */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 10px 15px;
+  }
+
+  /* LOGO SIZE ADJUSTMENT FOR MOBILE */
+  .navbar-logo a {
+    font-size: 30px; 
+    max-width: 140px;
+  }
+
+  .thread {
+    font-size: 35px; 
+  }
+
+  /* Hide desktop links and show on menu open */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: black;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

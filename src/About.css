@@ -1,0 +1,99 @@
+/* Global Styling */
+.about-container {
+    font-family: "Arial", sans-serif;
+    color: #fff;
+    background-color: #0a0a0a;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url("https://source.unsplash.com/1600x900/?technology,team") no-repeat center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Info Section */
+  .info-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #111;
+  }
+  
+  .info-content h2 {
+    font-size: 2rem;
+    color: #4caf50;
+  }
+  
+  .info-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    color: #ccc;
+  }
+  
+  /* Mission, Vision, Goal */
+  .mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 10px;
+    background: #222;
+  }
+  
+  .card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    font-size: 3rem;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #4caf50;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,117 @@
+/* Blog Container */
+.blog-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Main Blog */
+  .main-blog h1 {
+    color: #065f46; /* Dark green */
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .main-blog img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  .blog-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Blog Footer */
+  .blog-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .blog-footer h2 {
+    color: #065f46;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .additional-blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .blog-card {
+    flex: 1 1 calc(50% - 10px);
+    background-color: #f0fdf4; /* Light green background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card h3 {
+    font-size: 1.2rem;
+    color: #065f46;
+    margin-bottom: 5px;
+  }
+  
+  .blog-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #065f46;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-card a:hover {
+    background-color: #054b37;
+  }
+
+  .additional-blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .additional-blogs button {
+    background-color: #004d00; /* Dark Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .additional-blogs button:hover {
+    background-color: #008000; /* Lighter Green */
+    transform: scale(1.05);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  
