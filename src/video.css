@@ -1,35 +1,49 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #fff;
+}
+
 /* Video Container */
 .video-container {
   max-width: 1200px;
   margin: auto;
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
   animation: fadeIn 1s ease-in;
 }
 
+/* Video Gallery Title */
 .video-title {
   font-size: 2.8rem;
   color: #00b894;
   margin-bottom: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 .video-intro {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #000000;
   margin-bottom: 30px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* Video Grid */
 .video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centering Videos */
+  gap: 20px;
   margin-top: 30px;
+  padding: 0 20px;
 }
 
 /* Video Card */
@@ -42,6 +56,8 @@
   cursor: pointer;
   text-align: center;
   border: 2px solid #00b894;
+  max-width: 320px; /* Set fixed width to avoid layout breaking */
+  width: 100%;
 }
 
 .video-card:hover {
@@ -51,9 +67,11 @@
 
 /* Video Thumbnail */
 .thumbnail {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  display: block;
+  margin: auto;
 }
 
 .video-card:hover .thumbnail {
@@ -90,15 +108,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow: hidden;
 }
 
+/* Video Wrapper */
 .video-wrapper {
   width: 80%;
   max-width: 900px;
@@ -111,8 +131,33 @@
   border-radius: 12px;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .video-grid {
+      justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .video-wrapper {
       width: 95%;
+  }
+
+  .video-card {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-title {
+      font-size: 2rem;
+  }
+
+  .video-intro {
+      font-size: 1rem;
+  }
+
+  .video-card {
+      max-width: 90%;
   }
 }

@@ -1,58 +1,65 @@
-/* Footer Container */
+/* Footer Section */
 .footer {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Glassmorphism Effect */
-    padding: 15px 0;
-    border-top: 2px solid rgba(255, 255, 0, 0.5); /* Yellow Gradient Border */
-    position: relative;
-    backdrop-filter: blur(5px); /* Blur effect */
+  width: 100%;
+  background: #002244;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Branding */
+.footer-logo h2 {
+  font-size: 1.8rem;
+  color: #00aaff;
+  margin-bottom: 5px;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00aaff;
+  transform: scale(1.1);
+}
+
+/* Copyright */
+.copyright {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-logo h2 {
+    font-size: 1.5rem;
   }
-  
-  /* Footer Content Layout */
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    flex-wrap: wrap;
-  }
-  
-  /* Social Media Icons */
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
+
   .social-icons a {
-    color: yellow;
-    font-size: 20px;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 18px;
   }
-  
-  .social-icons a:hover {
-    color: #32CD32; /* Neon Green */
-    transform: scale(1.2);
-  }
-  
-  /* Copyright */
-  .copyright {
-    color: yellow;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .social-icons {
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-  }
-  
+}

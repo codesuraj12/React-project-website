@@ -2,60 +2,27 @@
 body {
   font-family: "Arial", sans-serif;
   text-align: center;
-  background: black;
-  position: relative;
-  overflow-x: hidden; /* Prevents horizontal scroll */
-  color: white;
+  background: #f8f9fa;
+  color: #212529;
   margin: 0;
   padding: 0;
-}
-
-/* Green Linear Lines Background - Apply to All Sections */
-section {
-  position: relative;
-  overflow: hidden;
-  padding: 50px 0;
-}
-
-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    to right,
-    rgba(0, 255, 0, 0.2) 0%,
-    rgba(0, 255, 0, 0.4) 5%,
-    rgba(0, 255, 0, 0.2) 10%
-  );
-  background-size: 50px 100%;
-  z-index: -1;
-}
-
-/* Ensure page is scrollable */
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow-y: auto;
 }
 
 /* Home Container */
 .home-container {
   text-align: center;
-  padding-bottom: 100px; /* Ensure enough space for scrolling */
+  padding-bottom: 50px;
 }
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to right, #24ce57, #3bf041);
-  color: white;
-  padding: 40px 10px;
+  background: linear-gradient(to right, #005aa7, #fffde4);
+  color: #212529;
+  padding: 60px 20px;
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
 
@@ -65,103 +32,73 @@ html, body {
 
 .cta-button {
   display: inline-block;
-  margin: 8px;
   padding: 12px 24px;
   font-size: 1rem;
-  background-color: white;
-  color: #24ce57;
+  background-color: #005aa7;
+  color: white;
   border-radius: 5px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .cta-button:hover {
-  background-color: #2ae543;
-  color: white;
+  background-color: #003f7f;
 }
 
 /* Sections: Services, Expertise, and Technology Stack */
-.services-section, .expertise-section, .technology-stack-section {
-  padding: 50px 20px;
-  position: relative;
+section {
+  padding: 60px 20px;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #44ea1f;
-  text-transform: uppercase;
+  color: #005aa7;
 }
 
-/* Proper Grid Layout */
-
-
-.expertise-grid, .tech-stack-grid {
+/* Grid Layouts */
+.services-grid, .expertise-grid, .tech-stack-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures multiple cards per row */
-  gap: 15px; /* Reduced gap */
-  justify-content: center;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
   max-width: 1200px;
   margin: auto;
 }
 
-
-
-/* Square Box Styling */
+/* Card Styling */
 .service-card, .expertise-card, .tech-stack-card {
-  background: #ffffff;
-  padding: 20px;
+  background: white;
+  padding: 25px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-  /* Ensuring Square Shape */
-  height: 250px; /* Equal height */
-  width: 250px;  /* Equal width */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
 }
 
 /* Hover Effect */
 .service-card:hover, .expertise-card:hover, .tech-stack-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.8), 
-              0px 0px 40px rgba(0, 255, 0, 0.5), 
-              0px 0px 60px rgba(0, 255, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 90, 167, 0.2);
 }
 
-/* Title Styling */
-.service-card h3, .expertise-card h3, .tech-stack-card h3 {
-  font-size: 1.5rem;
-  color: #008000; /* Dark Green */
-  font-weight: bold;
-}
-
-/* Description Styling */
-.service-card p, .expertise-card p, .tech-stack-card p {
-  font-size: 1rem;
-  color: #444;
-  margin-top: 10px;
-  text-align: center;
+/* Icon Styling */
+.service-icon, .expertise-icon, .tech-stack-icon {
+  font-size: 2.5rem;
+  color: #005aa7;
+  margin-bottom: 10px;
 }
 
 /* About Us Section */
 .about-section {
-  background: rgba(17, 17, 17, 0.9); /* Slight transparency to show background */
-  color: rgb(169, 169, 169);
+  background: #e3f2fd;
+  color: #212529;
   padding: 60px 20px;
   text-align: center;
 }
 
 .about-content {
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -169,28 +106,22 @@ h2 {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #ffcc00;
+  color: #005aa7;
 }
 
 .about-description {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #ddd;
 }
 
 .highlight {
-  color: #44ea1f;
+  color: #ff9800;
   font-weight: bold;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
-  }
-
-  .service-card, .expertise-card, .tech-stack-card {
-    height: 200px;
-    width: 200px;
+  .services-grid, .expertise-grid, .tech-stack-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }

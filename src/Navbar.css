@@ -6,55 +6,70 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: black;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7f9;
 }
 
-/* Navbar Container */
+/* Navbar Styles */
 .navbar {
-  background-color: rgba(46, 46, 46, 0.7); /* Transparent black */
-  color: yellow;
-  position: relative;
-  position: fixed;  /* Fix navbar position */
+  background-color: #141823; /* Matching the dark color from the logo */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: black; */
-  z-index: 1000; 
+  height: 70px; /* Increased height */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Main Navigation */
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background-color: black;
+  padding: 10px 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-/* LOGO FIX - Responsive */
-.navbar-logo a {
-  font-size: 40px; /* Adjusted for desktop */
-  font-weight: bold;
-  text-decoration: none;
-  color: yellow;
+/* Logo */
+.navbar-logo {
   display: flex;
   align-items: center;
-  max-width: 180px;
+  height: 100%;
 }
 
-.thread {
-  font-style: italic;
-  font-size: 45px; /* Adjusted */
+.navbar-logo a {
+  font-size: 26px;
   font-weight: bold;
-  color: green;
+  text-decoration: none;
+  color: #ffffff; /* White text for better contrast */
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
-/* Navigation Links */
+.navbar-logo span {
+  color: #0078d4; /* Keeping the blue highlight */
+}
+
+.logo-img {
+  height: 154px; /* Ensures the logo fits properly */
+  width: auto;
+  max-width: 150px; /* Prevents stretching */
+  object-fit: contain; /* Keeps proportions */
+}
+
+/* Navbar Links */
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .navbar-links li {
@@ -64,54 +79,60 @@ body {
 .navbar-links li a {
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
-  color: yellow;
-  transition: color 0.3s;
+  font-weight: 500;
+  color: #ffffff; /* White text for professional contrast */
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
 }
 
-.navbar-links .active {
-  color: green;
-}
-
+.navbar-links .active,
 .navbar-links li a:hover {
-  color: white;
+  color: #0078d4; /* Blue highlight on hover */
 }
 
 /* Mobile Navigation */
 .menu-icon {
   display: none;
   font-size: 24px;
-  color: yellow;
+  color: #ffffff; /* White for contrast */
   cursor: pointer;
 }
 
-/* RESPONSIVE FIXES */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
+  .navbar {
+    height: 65px; /* Adjusted for mobile */
+  }
+
   .navbar-container {
     padding: 10px 15px;
+    flex-direction: row;
+    align-items: center;
   }
 
-  /* LOGO SIZE ADJUSTMENT FOR MOBILE */
-  .navbar-logo a {
-    font-size: 30px; 
-    max-width: 140px;
+  /* Adjust Logo */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
   }
 
-  .thread {
-    font-size: 35px; 
+  .logo-img {
+    height: auto;
   }
 
-  /* Hide desktop links and show on menu open */
+  /* Mobile Navbar Links */
   .navbar-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 65px;
     right: 0;
     width: 100%;
-    background: black;
+    background: #141823; /* Match the navbar color */
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   .navbar-links.active {

@@ -8,18 +8,18 @@ const AboutUs = () => {
       <section className="hero-section">
         <div className="hero-overlay">
           <h1>About Us</h1>
+          <p>Innovating with Passion, Delivering with Excellence</p>
         </div>
       </section>
 
       {/* Company Info Section */}
       <section className="info-section">
         <div className="info-content">
-          <h2>Embarking on a journey of innovation and impact.</h2>
+          <h2>Empowering Businesses with Technology</h2>
           <p>
-            We are a passionate group of digital artisans, dedicated to helping
-            our clients navigate the digital landscape. We believe in the power
-            of technology and design to transform businesses, catapulting them
-            into the future.
+            At VibranixTech, we blend creativity with technology to craft
+            seamless digital experiences. Our solutions are designed to
+            transform businesses, ensuring growth and sustainability.
           </p>
         </div>
       </section>
@@ -30,24 +30,24 @@ const AboutUs = () => {
           <div className="icon">🚀</div>
           <h3>Our Mission</h3>
           <p>
-            Empower businesses with innovative, high-quality digital solutions
-            that enhance online presence and drive growth.
+            Delivering cutting-edge digital solutions that elevate brands and
+            enhance customer engagement.
           </p>
         </div>
         <div className="card">
-          <div className="icon">👀</div>
+          <div className="icon">🌍</div>
           <h3>Our Vision</h3>
           <p>
-            Be a leading digital agency known worldwide for innovation,
-            commitment to quality, and client success.
+            To be a globally trusted tech partner, driving digital excellence
+            and innovation.
           </p>
         </div>
         <div className="card">
           <div className="icon">🎯</div>
           <h3>Our Goal</h3>
           <p>
-            Exceed client expectations with tailored digital solutions, building
-            trust and shared success.
+            Building long-term relationships through quality services and
+            customer-centric solutions.
           </p>
         </div>
       </section>

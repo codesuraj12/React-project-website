@@ -6,7 +6,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* Hero Section */
@@ -14,13 +16,13 @@ body {
   position: relative;
   height: 60vh;
   width: 100%;
-  background: linear-gradient(180deg, #000000, #0a0a0a, #161616);
+  background: linear-gradient(180deg, #ffffff, #f8f9fa);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: #333;
   padding: 20px;
   overflow: hidden;
 }
@@ -36,21 +38,19 @@ body {
 .hero-section h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #ffffff;
-  text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+  color: #0056b3;
   line-height: 1.2;
 }
 
 .hero-section h1 span {
-  color: #00bfff;
-  text-shadow: 0 0 20px rgba(0, 191, 255, 1);
+  color: #007bff;
 }
 
 .hero-section p {
   font-size: 1.2rem;
   margin-top: 10px;
-  opacity: 0.8;
-  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.9;
+  color: #555;
   max-width: 600px;
   text-align: center;
   margin-left: auto;
@@ -67,25 +67,25 @@ body {
 }
 
 .btn {
-  background: linear-gradient(90deg, #111, #222);
+  background: linear-gradient(90deg, #007bff, #0056b3);
   color: white;
   padding: 12px 30px;
-  border: 2px solid #00bfff;
+  border: none;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
   border-radius: 5px;
   min-width: 180px;
   max-width: 220px;
   text-align: center;
   font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-  background: #00bfff;
-  color: black;
-  box-shadow: 0 0 20px rgba(0, 191, 255, 1);
+  background: #0056b3;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
   transform: scale(1.05);
 }
 

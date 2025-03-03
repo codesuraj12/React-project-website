@@ -10,9 +10,11 @@
   
   /* Main Blog */
   .main-blog h1 {
-    color: #065f46; /* Dark green */
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem; /* Reduce font size slightly */
+    text-align: center; /* Center it for better appearance */
+    word-wrap: break-word; /* Ensure long text wraps */
+    overflow-wrap: break-word;
+    padding-top: 20px; /* Add spacing above */
   }
   
   .main-blog img {

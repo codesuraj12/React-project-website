@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn, FaGoogle, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "./assets/vibranix-logo.png"
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -7,17 +8,20 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* Main Navigation */}
       <div className="navbar-container">
-        <div className="navbar-logo">
-          <a href="/"> <span className="thread">Vibranix</span>Tech</a>
-        </div>
+      <div className="navbar-logo">
+  <a href="/">
+    <img src={logo} alt="Vibranix Logo" className="logo-img" />
+  </a> 
+</div>
+
+
 
         <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
           <li><a href="/" className="active">Home</a></li>
-          <li><a href="/about">About US</a></li>
+          <li><a href="/about">About Us</a></li>
           <li><a href="/services">Services</a></li>
-          <li><a href="/Blog">Blogs</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="/video">Video</a></li>
         </ul>
 

@@ -1,49 +1,56 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "./portfolio.css"; // Ensure this CSS file exists for styling
+import { useNavigate } from "react-router-dom";
+import "./portfolio.css";
 
 import burgerTemplate from "./assets/burger_template.png";
 import shaadhi from "./assets/shaadhi.png";
-import toffee from "./assets/toffee.png"
+import toffee from "./assets/toffee.png";
 
 const portfolioItems = [
-  { 
-    name: "Burger Template", 
-    image: burgerTemplate, 
-    description: "A modern and responsive burger restaurant template." 
+  {
+    name: "Burger Template",
+    image: burgerTemplate,
+    description: "A modern and responsive burger restaurant template.",
+    link: "/blog",
   },
-  { 
-    name: "shaadhi.com clone", 
-    image: shaadhi, 
-    description: "shaadhi.com clone solution on affordable price." 
+  {
+    name: "Shaadi.com Clone",
+    image: shaadhi,
+    description: "Affordable Shaadi.com clone solution with advanced features.",
+    link: "/blog",
   },
-  { 
-    name: "Graphic design", 
-    image: toffee, 
-    description: "perfect design on affordable price." 
-  }
+  {
+    name: "Graphic Design",
+    image: toffee,
+    description: "High-quality graphic designs at budget-friendly prices.",
+    link: "/blog",
+  },
 ];
 
 const Portfolio = () => {
-    const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
-    return (
-      <section className="portfolio">
-        <h2>Portfolio</h2> {/* Modern Styled Title */}
-        <div className="portfolio-layout">
+  return (
+    <section className="portfolio">
+      <div className="portfolio-container">
+        <h2>Our Portfolio</h2>
+        <p>Explore our top-notch work delivered to happy clients worldwide.</p>
+
+        <div className="portfolio-grid">
           {portfolioItems.map((item, index) => (
-            <div key={index} className="portfolio-item">
+            <div key={index} className="portfolio-card">
               <img src={item.image} alt={item.name} />
-              <div className="portfolio-info">
+              <div className="portfolio-content">
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
-                <button onClick={() => navigate("/Blog")}>View More</button> {/* Navigate to Blog */}
+                <button onClick={() => navigate(item.link)}>View Details</button>
               </div>
             </div>
           ))}
         </div>
-      </section>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Portfolio;
