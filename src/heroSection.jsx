@@ -13,7 +13,7 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="content">
         <h1>
-          Vibranix<span>Tech</span> Solutions
+          Vibra<span>nix</span> Solutions
         </h1>
         <p>
           Pushing the boundaries of what's possible with cutting-edge innovation
