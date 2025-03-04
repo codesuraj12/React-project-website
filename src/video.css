@@ -19,7 +19,7 @@ body {
 /* Video Gallery Title */
 .video-title {
   font-size: 2.8rem;
-  color: #00b894;
+  color: #00b84d;
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
@@ -48,10 +48,10 @@ body {
 
 /* Video Card */
 .video-card {
-  background: #1c1c1c;
+  background: #ebf7ef;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 15px rgba(147, 250, 178, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   text-align: center;
@@ -81,14 +81,14 @@ body {
 /* Video Description */
 .video-description {
   font-size: 1rem;
-  color: #aaa;
+  color: #1b1a1a;
   margin-top: 10px;
 }
 
 /* Watch Button */
 .watch-button {
   margin-top: 10px;
-  background: #00b894;
+  background: #00b85c;
   color: black;
   border: none;
   padding: 8px 12px;

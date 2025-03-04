@@ -1,21 +1,14 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeroSection from "./heroSection";
 import Portfolio from "./portfolio";
 import Footer from "./footer";
-import {
-  faBrain,
-  faMobileAlt,
-  faCloud,
-  faShieldAlt,
-  faChartBar,
-  faNetworkWired,
-  faRobot,
-  faCogs,
-  faDatabase,
-  faServer,
-  faCodeBranch,
-} from "@fortawesome/free-solid-svg-icons";
+import { FaBrain,FaRobot, 
+   FaMobileAlt, FaCloud, FaShieldAlt,
+    FaChartBar, FaNetworkWired,FaDatabase, FaServer, FaCodeBranch } from "react-icons/fa";
+
+import { CiMobile3 } from "react-icons/ci";
+
+
 import "./home.css";
 
 const Home = () => {
@@ -25,19 +18,19 @@ const Home = () => {
         <HeroSection />
 
         <section id="services" className="services-section">
-          <h2>Our Services</h2>
+          <h2 >Our Services</h2>
           <div className="services-grid">
             {[
-              { icon: faBrain, title: "AI Solutions", desc: "Advanced AI-driven solutions to enhance efficiency and automation." },
-              { icon: faMobileAlt, title: "Mobile Development", desc: "Cross-platform mobile apps for iOS and Android." },
-              { icon: faCloud, title: "Cloud Solutions", desc: "Scalable and secure cloud computing services." },
-              { icon: faShieldAlt, title: "Cybersecurity", desc: "Robust security solutions to protect your digital assets." },
-              { icon: faChartBar, title: "Data Analytics", desc: "Data-driven insights for smarter decision-making." },
-              { icon: faNetworkWired, title: "IoT Integration", desc: "Smart device connectivity for modern businesses." }
+             { icon: <FaBrain />, title: "AI Solutions", desc: "Advanced AI-driven solutions to enhance efficiency and automation." },
+             { icon: <FaMobileAlt />, title: "Mobile Development", desc: "Cross-platform mobile apps for iOS and Android." },
+             { icon: <FaCloud />, title: "Cloud Solutions", desc: "Scalable and secure cloud computing services." },
+             { icon: <FaShieldAlt />, title: "Cybersecurity", desc: "Robust security solutions to protect your digital assets." },
+             { icon: <FaChartBar />, title: "Data Analytics", desc: "Data-driven insights for smarter decision-making." },
+             { icon: <FaNetworkWired />, title: "IoT Integration", desc: "Smart device connectivity for modern businesses." }
             ].map((service, index) => (
               <div className="card-container" key={index}>
                 <div className="service-card">
-                  <FontAwesomeIcon icon={service.icon} className="service-icon" />
+                <div className="service-icon">{service.icon}</div>
                   <h3>{service.title}</h3>
                   <p>{service.desc}</p>
                 </div>
@@ -61,15 +54,16 @@ const Home = () => {
           <h2>Our Expertise</h2>
           <div className="expertise-grid">
             {[
-              { icon: faRobot, title: "AI & ML", desc: "Advanced machine learning models and AI-driven solutions." },
-              { icon: faShieldAlt, title: "Cybersecurity", desc: "Protecting digital assets with robust security." },
-              { icon: faCloud, title: "DevOps", desc: "Automated CI/CD pipelines and DevOps workflows." },
-              { icon: faCloud, title: "Mobile Dev", desc: "Seamless cross-platform mobile applications." },
-              { icon: faCloud, title: "Cloud Native", desc: "Scalable and resilient cloud solutions." }
+             { icon: <FaRobot />, title: "AI & ML", desc: "Advanced machine learning models and AI-driven solutions." },
+             { icon: <FaShieldAlt />, title: "Cybersecurity", desc: "Protecting digital assets with robust security." },
+             { icon: <FaCloud />, title: "DevOps", desc: "Automated CI/CD pipelines and DevOps workflows." },
+             { icon: <CiMobile3 />, title: "Mobile Dev", desc: "Seamless cross-platform mobile applications." },
+             { icon: <FaCloud />, title: "Cloud Native", desc: "Scalable and resilient cloud solutions." }
             ].map((expertise, index) => (
               <div className="card-container" key={index}>
                 <div className="expertise-card">
-                  <FontAwesomeIcon icon={expertise.icon} className="expertise-icon" />
+                <div className="expertise-icon">{expertise.icon}</div>
+                  
                   <h3>{expertise.title}</h3>
                   <p>{expertise.desc}</p>
                 </div>
@@ -83,7 +77,8 @@ const Home = () => {
             ].map((expertise, index) => (
               <div className="card-container" key={index}>
                 <div className="expertise-card">
-                  <FontAwesomeIcon icon={expertise.icon} className="expertise-icon" />
+                <div className="expertise-icon">{expertise.icon}</div>
+                  
                   <h3>{expertise.title}</h3>
                   <p>{expertise.desc}</p>
                 </div>
@@ -96,13 +91,15 @@ const Home = () => {
           <h2>Technology Stack</h2>
           <div className="tech-stack-grid">
             {[
-              { icon: faDatabase, title: "MongoDB", desc: "NoSQL database for modern applications." },
-              { icon: faServer, title: "Node.js", desc: "Backend development with JavaScript." },
-              { icon: faCodeBranch, title: "Git & DevOps", desc: "Version control and deployment pipelines." }
+              { icon: <FaDatabase />, title: "MongoDB", desc: "NoSQL database for modern applications." },
+              { icon: <FaServer />, title: "Node.js", desc: "Backend development with JavaScript." },
+              { icon: <FaCodeBranch />, title: "Git & DevOps", desc: "Version control and deployment pipelines." }
             ].map((tech, index) => (
               <div className="card-container" key={index}>
                 <div className="tech-stack-card">
-                  <FontAwesomeIcon icon={tech.icon} className="tech-stack-icon" />
+
+                <div className="tech-stack-icon">{tech.icon}</div>
+                  
                   <h3>{tech.title}</h3>
                   <p>{tech.desc}</p>
                 </div>

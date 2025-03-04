@@ -3,7 +3,7 @@ body {
   font-family: "Arial", sans-serif;
   text-align: center;
   background: #f8f9fa;
-  color: #212529;
+  color: #00a775;
   margin: 0;
   padding: 0;
 }
@@ -14,37 +14,6 @@ body {
   padding-bottom: 50px;
 }
 
-/* Hero Section */
-.hero-section {
-  background: linear-gradient(to right, #005aa7, #fffde4);
-  color: #212529;
-  padding: 60px 20px;
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 1rem;
-  background-color: #005aa7;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-.cta-button:hover {
-  background-color: #003f7f;
-}
 
 /* Sections: Services, Expertise, and Technology Stack */
 section {
@@ -54,7 +23,7 @@ section {
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #005aa7;
+  color: #00a775;
 }
 
 /* Grid Layouts */
@@ -85,7 +54,7 @@ h2 {
 /* Icon Styling */
 .service-icon, .expertise-icon, .tech-stack-icon {
   font-size: 2.5rem;
-  color: #005aa7;
+  color: #0b2c1a;
   margin-bottom: 10px;
 }
 
@@ -106,7 +75,7 @@ h2 {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #005aa7;
+  color: #00a775;
 }
 
 .about-description {

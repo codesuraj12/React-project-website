@@ -1,10 +1,10 @@
 /* Footer Section */
 .footer {
   width: 100%;
-  background: #002244;
+  background: #9bcf87c4;
   padding: 20px 0;
   text-align: center;
-  color: white;
+  color: rgb(5, 5, 5);
 }
 
 /* Footer Container */
@@ -20,13 +20,13 @@
 /* Branding */
 .footer-logo h2 {
   font-size: 1.8rem;
-  color: #00aaff;
+  color: #1e7a54;
   margin-bottom: 5px;
 }
 
 .footer-logo p {
   font-size: 1rem;
-  color: #ccc;
+  color: #000000;
 }
 
 /* Social Icons */
@@ -37,20 +37,20 @@
 }
 
 .social-icons a {
-  color: white;
+  color: #1e7a54;
   font-size: 20px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #00aaff;
+  color: #0b2e04;
   transform: scale(1.1);
 }
 
 /* Copyright */
 .copyright {
   font-size: 14px;
-  color: #ccc;
+  color: #000000;
 }
 
 /* Responsive */

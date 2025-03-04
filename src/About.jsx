@@ -2,6 +2,14 @@ import React from "react";
 import "./About.css";
 
 const AboutUs = () => {
+  
+// create array
+  const data = [
+    { icon: "🚀", title: "Our Mission", text: "Delivering cutting-edge digital solutions that elevate brands and enhance customer engagement." },
+    { icon: "🌍", title: "Our Vision", text: "To be a globally trusted tech partner, driving digital excellence and innovation." },
+    { icon: "🎯", title: "Our Goal", text: "Building long-term relationships through quality services and customer-centric solutions." }
+  ];
+
   return (
     <div className="about-container">
       {/* Hero Section */}
@@ -26,30 +34,14 @@ const AboutUs = () => {
 
       {/* Mission, Vision, Goal Section */}
       <section className="mission-vision">
-        <div className="card">
-          <div className="icon">🚀</div>
-          <h3>Our Mission</h3>
-          <p>
-            Delivering cutting-edge digital solutions that elevate brands and
-            enhance customer engagement.
-          </p>
+      {data.map((item, index) => (
+        <div className="card" key={index}>
+          <div className="icon">{item.icon}</div>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
         </div>
-        <div className="card">
-          <div className="icon">🌍</div>
-          <h3>Our Vision</h3>
-          <p>
-            To be a globally trusted tech partner, driving digital excellence
-            and innovation.
-          </p>
-        </div>
-        <div className="card">
-          <div className="icon">🎯</div>
-          <h3>Our Goal</h3>
-          <p>
-            Building long-term relationships through quality services and
-            customer-centric solutions.
-          </p>
-        </div>
+      ))}
+
       </section>
     </div>
   );

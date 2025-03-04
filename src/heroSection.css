@@ -38,19 +38,19 @@ body {
 .hero-section h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #0056b3;
+  color: #39b300;
   line-height: 1.2;
 }
 
 .hero-section h1 span {
-  color: #007bff;
+  color: #00ff00;
 }
 
 .hero-section p {
   font-size: 1.2rem;
   margin-top: 10px;
   opacity: 0.9;
-  color: #555;
+  color: #535353;
   max-width: 600px;
   text-align: center;
   margin-left: auto;
@@ -67,8 +67,8 @@ body {
 }
 
 .btn {
-  background: linear-gradient(90deg, #007bff, #0056b3);
-  color: white;
+  background: linear-gradient(90deg, #5eac85, #33b300);
+  color: rgba(36, 33, 33, 0.925);
   padding: 12px 30px;
   border: none;
   font-size: 1rem;
@@ -83,13 +83,13 @@ body {
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: #15b300;
   color: white;
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 4px 10px #15b300;
   transform: scale(1.05);
 }
 
-/* ✅ Mobile Responsive Fix */
+
 @media screen and (max-width: 768px) {
   .hero-section {
       height: auto;

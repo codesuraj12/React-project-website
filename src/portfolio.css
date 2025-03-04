@@ -14,7 +14,7 @@
   .portfolio h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #0044cc;
+    color: #568203;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -53,7 +53,7 @@
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-bottom: 2px solid #0044cc;
+    border-bottom: 2px solid #568203;
   }
   
   /* Portfolio Content */
@@ -63,7 +63,7 @@
   }
   
   .portfolio-content h3 {
-    color: #0044cc;
+    color: #568203;
     font-size: 1.4rem;
     margin-bottom: 10px;
   }
@@ -76,7 +76,7 @@
   
   /* Button */
   .portfolio-content button {
-    background: #0044cc;
+    background: #568203;
     color: white;
     border: none;
     padding: 10px 18px;
@@ -87,7 +87,7 @@
   }
   
   .portfolio-content button:hover {
-    background: #002266;
+    background: #02580e;
   }
   
   /* Responsive */
