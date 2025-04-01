@@ -54,28 +54,28 @@ const ChatWidget = () => {
             <>
               <p>How can I help you?</p>
               <input type="text" value={query} onChange={e => setQuery(e.target.value)} placeholder="Type your query..." />
-              <button onClick={() => setStep(2)}>Next</button>
+              <button className="next-Chat" onClick={() => setStep(2)}>Next</button>
             </>
           )}
           {step === 2 && (
             <>
               <p>Please enter your email:</p>
               <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Your email..." />
-              <button onClick={() => setStep(3)}>Next</button>
+              <button className="next-Chat" onClick={() => setStep(3)}>Next</button>
             </>
           )}
           {step === 3 && (
             <>
               <p>Enter your contact number:</p>
               <input type="tel" value={contact} onChange={e => setContact(e.target.value)} placeholder="Your contact..." />
-              <button onClick={() => setStep(4)}>Next</button>
+              <button className="next-Chat" onClick={() => setStep(4)}>Next</button>
             </>
           )}
           {step === 4 && (
             <>
               <p>Enter your full name:</p>
               <input type="text" value={fullName} onChange={e => setFullName(e.target.value)} placeholder="Full Name..." />
-              <button onClick={sendEmail}>Submit</button>
+              <button className='submit' onClick={sendEmail}>Submit</button>
             </>
           )}
         </div>

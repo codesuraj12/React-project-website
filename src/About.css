@@ -1,37 +1,29 @@
 /* Global Styling */
 .about-container {
   font-family: "Poppins", sans-serif;
-  color: #333;
-  background-color: #f8f9fa;
+  color: #1b1b1b;
+
 }
 
 /* Hero Section */
-.hero-section {
-  /* background: url("https://source.unsplash.com/1600x900/?business,teamwork") no-repeat center/cover; */
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
 
 .hero-overlay {
-  background: rgba(213, 255, 168, 0.7);
+  /* background: #FEE8D6; */
   width: 100%;
   text-align: center;
-  padding: 50px;
+  padding: 50px 20px;
   border-radius: 8px;
 }
 
 .hero-overlay h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #004830;
+  color: #fff;
 }
 
 .hero-overlay p {
   font-size: 1.2rem;
-  color: #555;
+  color: #fff;
   margin-top: 10px;
 }
 
@@ -39,13 +31,81 @@
 .info-section {
   text-align: center;
   padding: 50px 20px;
-  background: rgba(213, 255, 168, 0.7);
+  background: #FEE8D6;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+.second-section{
+  color: #fff;
+}
+.second-section h1{
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+}
+.second-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+
+
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.highlight-box {
+  background: #FEE8D6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+}
+.highlight-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.highlight-box p {
+  font-size: 1rem;
+  opacity: 0.8;
+  color: #1a1a1a;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.stat-box {
+  /* background: white; */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+}
+.stat-box h3 {
+  font-size: 2rem;
+  color: #000000;
+}
+.stat-box p {
+  font-size: 1rem;
+  opacity: 0.8;
+  color: #000000;
+}
+
 
 .info-content h2 {
   font-size: 2rem;
-  color: #708238;
+  color: #FF9913;
 }
 
 .info-content p {
@@ -62,7 +122,8 @@
   justify-content: center;
   gap: 25px;
   padding: 50px 10px;
-  background: rgba(213, 255, 168, 0.7);
+  background: #FF8400;
+  border-radius: 10px;
   flex-wrap: wrap;
 }
 
@@ -89,7 +150,7 @@
 .card h3 {
   margin: 12px 0;
   font-size: 1.6rem;
-  color: #708238;
+  color: #E27A53;
 }
 
 .card p {
@@ -100,6 +161,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .hero-overlay{
+    max-width: 100%;
+  }
   .hero-overlay h1 {
     font-size: 2.5rem;
   }

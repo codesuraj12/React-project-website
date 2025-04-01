@@ -13,11 +13,10 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="content">
         <h1>
-          Vibra<span>nix</span> Solutions
+          Riz<span>entra</span> 
         </h1>
         <p>
-          Pushing the boundaries of what's possible with cutting-edge innovation
-          and future-forward technology solutions.
+         Empowering businesses with cutting-edge technology and next-gen solutions to drive growth and success.
         </p>
         <div className="buttons">
           <button className="btn" onClick={() => handleScroll("services")}>

@@ -2,7 +2,7 @@
 .portfolio {
     text-align: center;
     padding: 70px 20px;
-    background-color: #f9f9f9;
+ 
     color: #333;
   }
   
@@ -14,7 +14,7 @@
   .portfolio h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #568203;
+    color: #FFff;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -22,27 +22,34 @@
   .portfolio p {
     font-size: 1.1rem;
     margin: 10px auto 40px;
-    color: #666;
+    color: #fff;
     max-width: 700px;
   }
   
-  /* Portfolio Grid */
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    justify-content: center;
+
+
+  .portfolio-slider {
+    position: relative; 
+    max-width: 500px;   
+    margin: auto;
+    overflow: hidden;
+    /* height: 470px; */
+    height: 435px;
+    border-radius: 12px;
+    border: 6px solid #cc55009f;
   }
-  
-  /* Portfolio Card */
+
   .portfolio-card {
-    background: white;
+    background: #fff2e8fa;
     border-radius: 12px;
     overflow: hidden;
+ 
+    width: 100%;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* position:absolute;  */
   }
-  
+
   .portfolio-card:hover {
     transform: translateY(-8px);
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
@@ -51,11 +58,11 @@
   /* Portfolio Image */
   .portfolio-card img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-bottom: 2px solid #568203;
+    height: auto;
+    border-bottom: 2px solid #FF9913;
   }
   
+
   /* Portfolio Content */
   .portfolio-content {
     padding: 20px;
@@ -63,7 +70,7 @@
   }
   
   .portfolio-content h3 {
-    color: #568203;
+    color: #E27A53;
     font-size: 1.4rem;
     margin-bottom: 10px;
   }
@@ -76,7 +83,7 @@
   
   /* Button */
   .portfolio-content button {
-    background: #568203;
+    background: #FF9913;
     color: white;
     border: none;
     padding: 10px 18px;
@@ -87,13 +94,48 @@
   }
   
   .portfolio-content button:hover {
-    background: #02580e;
+    background: #CC5500;
   }
+
+  .nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 500px; /* Ensure it doesn't stretch beyond the card width */
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button container */
+    pointer-events: none; /* Prevent interfering with clicks outside */
+}
   
+.nav-buttons button {
+  background: rgba(0, 0, 0, 0.212);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  pointer-events: auto; /* Enable clicking */
+}
+
+.nav-buttons button:first-child {
+  left: 10px; /* Align properly */
+}
+
+.nav-buttons button:last-child {
+  right: 10px; /* Align properly */
+}
   /* Responsive */
   @media (max-width: 768px) {
-    .portfolio-grid {
-      grid-template-columns: 1fr;
+    .nav-buttons {
+      position: absolute;
+      top: 36%;
+    }
+    .portfolio-slider{
+      height: 340px;
     }
   }
   

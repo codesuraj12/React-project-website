@@ -2,9 +2,10 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  border-radius: 10px;
+  border-radius: 6px;
   z-index: 1000;
   background-color: #dca5a5;
+  padding: 12PX;
 }
 
 .chat-button {
@@ -24,7 +25,7 @@
 .chat-icon {
   width: 65px;
   height: 65px;
-  background: green;
+  background: rgb(128, 115, 0);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -73,13 +74,14 @@
 }
 
 .close-chat {
-  background: red;
+  background: rgb(255, 94, 0);
   color: white;
   border: none;
   float: right;
   cursor: pointer;
   font-size: 18px;
   padding: 5px;
+  border-radius: 7px;
 }
 
 input {
@@ -90,11 +92,24 @@ input {
   border-radius: 5px;
 }
 
-button {
+.next-Chat {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  background: green;
+  background: rgba(0, 128, 0, 0.678);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(238, 145, 5, 0.678);
   color: white;
   border: none;
   border-radius: 5px;

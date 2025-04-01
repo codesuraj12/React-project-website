@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Blog.css';
-import marriageImg from './assets/marriage.webp';
+import marriageImg from './assets/shaadhi.png';
 import dummyImg from './assets/marriage.webp'; // Add a placeholder image
 
 const blogsData = {
@@ -20,7 +20,8 @@ const blogsData = {
     image: dummyImg,
     content: (
       <>
-        <p>This is a dummy description for the Jeevansathi Clone App.</p>
+        <p>This is a dummy description for the Jeevansathi Clone App
+        </p>
       </>
     ),
   },

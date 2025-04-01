@@ -9,6 +9,8 @@ import Video from './Video';
 import ChatWidget from './chatWidget';  // Import the ChatWidget
 import './App.css';
 import Footer from './footer';
+import Ecommerce from './Ecommerce';
+import Career from './Career';
 
 function App() {
   return (
@@ -18,9 +20,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/Blog" element={<Blog />} />
+          <Route path="/services/:category" element={<Services />} />
+          {/* <Route path="/services" element={<Services/>} /> */}
+          <Route path="/blog" element={<Blog />} />
           <Route path="/video" element={<Video />}/>
+          <Route path ="/ecommerce/:menu" element={<Ecommerce/>}/>
+
+          <Route path='/career' element = {<Career/>}></Route>
         </Routes>
         <ChatWidget /> {/* Add the chat widget here */}
       <Footer />

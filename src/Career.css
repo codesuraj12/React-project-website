@@ -1,0 +1,132 @@
+/* Container for the entire Career page */
+.career-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    background-color: #da590e;
+  }
+  
+  /* Main heading styling */
+  .career-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .career-container h3{
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  /* Intro paragraph styling */
+  .career-container p {
+    font-size: 1.5rem;
+    color: #f1e8e8;
+    margin-bottom: 40px;
+  }
+  
+  /* Container for job listings */
+  .jobs-container {
+   
+   
+    flex-wrap: wrap;
+    
+    gap: 20px;
+  }
+  
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+  /* Individual job card styling */
+  .jobs {
+    
+    background: #f7e796;
+    padding: 25px;
+    margin: 12px auto;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(228, 169, 8, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #ff9913;
+   
+    width: 100%;
+  }
+  
+  
+  .jobs h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+
+  .jobs p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #181515;
+  }
+
+  
+  
+.jobs button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff9913;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .jobs .skills{
+    color:#55555588;
+  }
+  
+  .jobs button:hover {
+    background: #d78c3d;
+  }
+  
+  .jobs:hover {
+    transform: scale(1.03);
+    box-shadow: 6px 6px 20px rgba(255, 208, 0, 0.5);
+  }
+  
+  .show-more {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #e07b37;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .show-more:hover {
+    background: #b34200;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
+
+  @media screen and (max-width:768px){
+    .career-container p, .jobs h2,.jobs p{
+        font-size: 1rem;
+    }
+
+  }

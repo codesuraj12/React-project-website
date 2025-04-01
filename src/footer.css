@@ -1,7 +1,7 @@
 /* Footer Section */
 .footer {
   width: 100%;
-  background: #9bcf87c4;
+  background: #FAB972;
   padding: 20px 0;
   text-align: center;
   color: rgb(5, 5, 5);
@@ -20,7 +20,7 @@
 /* Branding */
 .footer-logo h2 {
   font-size: 1.8rem;
-  color: #1e7a54;
+  color: #CC5500;
   margin-bottom: 5px;
 }
 
@@ -37,13 +37,13 @@
 }
 
 .social-icons a {
-  color: #1e7a54;
+  color: #CC5500;
   font-size: 20px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #0b2e04;
+  color: #8A3324;
   transform: scale(1.1);
 }
 

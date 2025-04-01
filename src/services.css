@@ -2,7 +2,7 @@
 .services-container {
   max-width: 1200px;
   margin: auto;
-  padding: 40px;
+  padding: 46px;
   text-align: center;
   animation: fadeIn 1s ease-in;
 }
@@ -15,13 +15,14 @@
 
 /* Header */
 .services-header h1 {
-  font-size: 2.5rem;
-  color: #006146;
+  font-size: 2rem;
+  color: #FFff;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .services-header p {
-  color: #026829;
+  color: #454645;
   font-size: 1.2rem;
   max-width: 800px;
   margin: auto;
@@ -45,9 +46,10 @@
 }
 
 /* Services Grid */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.web-page {
+  flex-direction: column;
+  display: flex;
+
   gap: 20px;
   margin-top: 30px;
 }
@@ -56,10 +58,10 @@
 
 
 .service-category {
-  background: #9ae0af;
-  padding: 20px;
+  background: #fff1e6;
+  padding: 35px;
   border-radius: 12px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 15px rgba(51, 50, 50, 0.1);
   transition: all 0.3s ease-in-out;
   position: relative;
   text-align: center;
@@ -73,7 +75,7 @@
 
 /* Heading Always Visible */
 .service-category h2 {
-  color: #047857;
+  color: #E27A53;
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
@@ -96,13 +98,12 @@
   transform: scale(1.05);
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
   z-index: 10;
-  height: auto;
-  min-height: 250px;
+
 }
 
 .service-category li {
   padding: 5px 0;
-  color: #333;
+  color: #464646;
   font-size: 1rem;
 }
 
@@ -112,7 +113,7 @@
 }
 
 .client-reviews h2 {
-  color: #065f46;
+  color: #fffbf9;
   margin-bottom: 20px;
   font-size: 2rem;
 }
@@ -127,7 +128,7 @@
 
 /* Square Review Cards */
 .review {
-  background: #d1fae5;
+  background: #FED8B1;
   padding: 15px;
   border-radius: 12px;
   text-align: center;
@@ -168,7 +169,7 @@
 .review span {
   display: block;
   margin-top: 10px;
-  color: #047857;
+  color: #CC5500;
   font-weight: bold;
 }
 
@@ -178,4 +179,16 @@
     transform: none !important;
     min-height: auto;
   }
+}
+
+
+@media (max-width: 300px){
+  .service-image {
+    width: 160px;
+   
+}
+.services-header h1{
+  font-size: 1.5rem;
+}
+
 }

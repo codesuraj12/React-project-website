@@ -1,8 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+body {
+ 
+  margin: 0 ;
   padding: 2rem;
   text-align: center;
+  background-image: linear-gradient(80deg, #fc6600, #ff6e00);
 }
 
 .logo {
@@ -12,10 +13,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #e95e0eaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #ff8843aa);
 }
 
 @keyframes logo-spin {

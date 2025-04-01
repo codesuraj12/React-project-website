@@ -16,7 +16,7 @@ body {
   position: relative;
   height: 60vh;
   width: 100%;
-  background: linear-gradient(180deg, #ffffff, #f8f9fa);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,20 +38,20 @@ body {
 .hero-section h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #39b300;
-  line-height: 1.2;
+  color: #fee8d6 ;
+  line-height: 2.2;
 }
 
 .hero-section h1 span {
-  color: #00ff00;
+  color: #fcc386;
 }
 
 .hero-section p {
   font-size: 1.2rem;
   margin-top: 10px;
   opacity: 0.9;
-  color: #535353;
-  max-width: 600px;
+  color: #ffff;
+  max-width: 700px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -67,8 +67,8 @@ body {
 }
 
 .btn {
-  background: linear-gradient(90deg, #5eac85, #33b300);
-  color: rgba(36, 33, 33, 0.925);
+  background: linear-gradient(90deg, #FFAD00, #FFBD31);
+  color:  #302f2f;
   padding: 12px 30px;
   border: none;
   font-size: 1rem;
@@ -83,9 +83,9 @@ body {
 }
 
 .btn:hover {
-  background: #15b300;
+  background: #FF9913;
   color: white;
-  box-shadow: 0 4px 10px #15b300;
+  box-shadow: 0 4px 10px #D16002;
   transform: scale(1.05);
 }
 
@@ -102,10 +102,11 @@ body {
 
   .hero-section p {
       font-size: 1rem;
-      max-width: 90%;
+      max-width: 100%;
   }
 
   .buttons {
+    margin-top: 25px;
       flex-direction: row;
       gap: 10px;
   }

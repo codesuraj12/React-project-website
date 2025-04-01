@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import "./video.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination,Autoplay,EffectCoverflow } from "swiper/modules";
+
 
 const videos = [
   { 
@@ -32,10 +38,32 @@ const Video = () => {
         Discover an amazing selection of videos, from classic music hits to hilarious animal moments. 
         Click on any video to watch it in full screen!
       </p>
+      <Swiper
+      modules={[Navigation, Pagination,Autoplay, EffectCoverflow]}
+      spaceBetween={20}
+      slidesPerView={1}
+      navigation
+      centeredSlides={true}
+      pagination={{ clickable: true }}
+      loop={true}
+      coverflowEffect={{
+        rotate: 0, // No rotation
+        stretch: 0, // No stretching
+        depth: 200, // Control depth effect
+        modifier: 1, // Effect strength
+        slideShadows: false, // Optional shadow
+      }}
+      autoplay={{ 
+        delay: 3000, // Set delay time in milliseconds (3 seconds)
+        disableOnInteraction: false // Keep autoplay active even after user interaction
+      }}
+    >
       
-      <div className="video-grid">
+     
+
         {videos.map((video) => (
-          <div key={video.id} className="video-card" onClick={() => setSelectedVideo(video.url)}>
+          <SwiperSlide  key={video.id}>
+          <div className="video-card" onClick={() => setSelectedVideo(video.url)}>
             <img
               src={`https://img.youtube.com/vi/${video.url.split("/embed/")[1]}/hqdefault.jpg`}
               alt={video.title}
@@ -45,8 +73,10 @@ const Video = () => {
             <p className="video-description">{video.description}</p>
             <button className="watch-button">Watch Now</button>
           </div>
+          </SwiperSlide>
         ))}
-      </div>
+     
+      </Swiper>
 
       {/* Full-Screen Video Modal */}
       {selectedVideo && (
