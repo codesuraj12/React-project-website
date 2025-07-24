@@ -13,7 +13,7 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="content">
         <h1>
-          Riz<span>entra</span> 
+          Vib<span>ranix</span> 
         </h1>
         <p>
          Empowering businesses with cutting-edge technology and next-gen solutions to drive growth and success.
