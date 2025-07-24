@@ -93,7 +93,7 @@ const Home = () => {
           <div className="about-content">
             <h2 className="about-title">Who We Are</h2>
             <p className="about-description">
-              At <span className="highlight">Rizentra</span>,
+              At <span className="highlight">Vibranix</span>,
               we specialize in creating innovative, scalable, and future-ready digital solutions. Our expertise lies in harnessing cutting-edge technology to empower businesses, streamline operations, and drive long-term success. With a passion for excellence, we transform ideas into impactful digital experiences.
 
             </p>
